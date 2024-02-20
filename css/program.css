@@ -1,0 +1,635 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Argue DEMO';
+  src: url('ArgueDEMO.woff2') format('woff2'),
+    url('ArgueDEMO.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*
+프리텐다드
+font-family: 'Pretendard';*
+마루부리
+font-family: 'MaruBuriExtraLight';
+font-family: 'MaruBuriLight';
+font-family: 'MaruBuri';
+font-family: 'MaruBuriBold';
+font-family: 'MaruBuriSemiBold';*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #383330;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+video,
+iframe {
+  vertical-align: middle;
+}
+
+body {
+  min-width: 1450px;
+  width: 100%;
+  font-family: 'Pretendard';
+  font-size: 18px;
+  line-height: 28px;
+  color: #383330;
+  background-color: #f9f7f2;
+}
+
+/*header*/
+#header {
+  padding: 20px 0;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header_inner {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+.logo {
+  text-align: center;
+  position: relative;
+}
+
+#gnb {
+  display: flex;
+  justify-content: space-around;
+}
+
+#gnb li {
+  font-size: 18px;
+  padding: 15px 0;
+  width: 280px;
+  text-align: center;
+
+}
+
+#gnb li a {
+  color: #d26628;
+}
+
+.login_box {
+  position: absolute;
+  justify-content: flex-end;
+  top: 15px;
+  right: 86px;
+}
+
+.login {
+  padding-bottom: 15px;
+}
+
+.login ul {
+  display: flex;
+}
+
+.login ul li {
+  padding-left: 38px;
+  font-size: 16px;
+}
+
+.login ul li a {
+  color: #d26628;
+}
+
+.search {
+  background: #c4df9b url(../images/search.png) no-repeat 166px center;
+  color: #295728;
+  font-family: 'Pretendard';
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+  padding: 5px 20px;
+  width: 196px;
+  box-sizing: border-box;
+}
+
+.search::placeholder {
+  color: #295728;
+  font-family: 'Pretendard';
+}
+
+.search ul li {
+  font-size: 18px;
+  padding: 3px 0;
+}
+
+.search ul li a {
+  font-size: 18px;
+  color: #295728;
+}
+
+.search_icn {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.search_icn a img {
+  padding-left: 30px;
+}
+
+/*main_banner*/
+#main_banner img {
+  width: 100%;
+}
+
+#main_banner .swiper-button-next,
+#main_banner .swiper-button-prev,
+#main_banner .swiper-pagination {
+  opacity: 0;
+}
+
+/*wellmade*/
+#wellmade {
+  width: 1320px;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+
+#wellmade .title {
+  font-size: 40px;
+  line-height: 160%;
+  text-align: center;
+  font-family: 'MaruBuriSemiBold';
+  padding-bottom: 100px;
+}
+
+.special .swiper-slide {
+  text-align: center;
+}
+
+.orange {
+  color: #d26628;
+}
+
+.hightlight {
+  background: url(../images/highlighter.png)no-repeat center bottom;
+}
+
+.btn_flex {
+  display: flex;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.btn_flex li {
+  margin-right: 5px;
+}
+
+.p_btn {
+  background-color: #ef997e;
+  display: inline-block;
+  width: 110px;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 17.5px;
+}
+
+.g_btn {
+  background-color: #a1a743;
+  display: inline-block;
+  width: 136px;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 17.5px;
+
+}
+
+.pr_btn {
+  background-color: #c69c6d;
+  display: inline-block;
+  width: 136px;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 17.5px;
+}
+
+.price {
+  font-size: 24px;
+  font-family: 'MaruBuriSemiBold';
+  text-align: end;
+  padding-top: 30px;
+}
+
+.sub_title {
+  text-align: left;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+/*마진오토 기준등은 원하는 크기에 따라 달라집니다!*/
+.arrow_next {
+  right: 20px;
+}
+
+.arrow_prev {
+  left: 20px;
+}
+
+/*화살표를 이미지로 변경*/
+.arrow_next:after {
+  content: url(../images/arrow_next.png);
+}
+
+.arrow_prev:after {
+  content: url(../images/arrow_prev.png);
+}
+
+.arrow_next,
+.arrow_prev {
+  width: 40px;
+  height: 40px;
+  top: 32%;
+  /*이미지크기와 동일하게 설정*/
+}
+
+/*text_box*/
+#text_box {
+  white-space: nowrap;
+  overflow: hidden;
+  transition: 0.5s;
+  background-color: #f89d67;
+}
+
+.text_wrapper {
+  animation: text_ani 30s linear infinite;
+  display: flex;
+  width: 8000px;
+}
+
+@keyframes text_ani {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+#text_box p {
+  font-family: 'Argue DEMO';
+  font-size: 36px;
+  padding-top: 22px;
+  padding-bottom: 17px;
+}
+
+.text_slide {
+  width: 4500px;
+}
+
+#text_box .og {
+  color: #fff;
+  padding-left: 50px;
+}
+
+#text_box .bw {
+  color: #fff;
+  padding-left: 50px;
+}
+
+/*snap_best*/
+#snap_best {
+  width: 1320px;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+#snap_best .title {
+  font-size: 40px;
+  line-height: 150%;
+  text-align: center;
+  font-family: 'MaruBuriSemiBold';
+  padding-bottom: 100px;
+}
+
+#snap_best ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#snap_best ul li {
+  position: relative;
+  overflow: hidden;
+}
+
+#snap_best ul li:hover .blur_box {
+  opacity: 1;
+}
+
+#snap_best .blur_box {
+  transform: all 0.5s;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(29, 67, 35, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#snap_best ul li a {
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#snap_best ul li img {
+  max-width: 100%;
+}
+
+#snap_best ul li p {
+  z-index: 10;
+}
+
+#snap_best ul li:nth-child(1) p {
+  position: absolute;
+  top: 76%;
+  left: 15%;
+}
+
+#snap_best ul li:nth-child(2) p {
+  position: absolute;
+  top: 76%;
+  left: 25%;
+}
+
+#snap_best ul li:nth-child(3) p {
+  position: absolute;
+  top: 76%;
+  left: 10%;
+}
+
+/*pic*/
+#pic {
+  background: url(../images/pic_bg.png)no-repeat;
+  width: 100%;
+  height: 545px;
+  padding-bottom: 200px;
+}
+
+.pic_inner {
+  width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-content: left;
+}
+
+.pic_text {
+  padding: 50px;
+}
+
+.best {
+  width: 715px;
+  padding-top: 90px;
+}
+
+#pic h1 {
+  font-size: 40px;
+  line-height: 60px;
+  font-family: 'MaruBuriSemiBold';
+  padding-top: 110px;
+}
+
+#pic p {
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 40px;
+}
+
+/*live*/
+#live {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+#live .live_box {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+.live_box li {
+  border-radius: 200px 200px 0 0;
+
+}
+
+.live_box li:hover {
+  transform: translateY(-20px);
+  transition: all 0.5s;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+#live .title {
+  font-size: 40px;
+  line-height: 150%;
+  text-align: center;
+  font-family: 'MaruBuriSemiBold';
+  padding-bottom: 20px;
+}
+
+#live .mid_title {
+  font-size: 20px;
+  font-family: 'Pretendard';
+  text-align: center;
+}
+
+.live_box li {
+  position: relative;
+  text-align: center;
+}
+
+.live_box li:nth-child(1) .live_text {
+  color: #fff;
+  position: absolute;
+  top: 30%;
+  left: 23%;
+}
+
+.live_box li:nth-child(2) .live_text {
+  color: #fff;
+  position: absolute;
+  top: 17%;
+  left: 12%;
+}
+
+.live_box li:nth-child(3) .live_text {
+  color: #fff;
+  position: absolute;
+  top: 28%;
+  left: 18%;
+}
+
+.live_title {
+  font-size: 28px;
+  line-height: 35px;
+  font-family: 'MaruBuriSemiBold';
+  color: #fff;
+  text-align: center;
+}
+
+.live_title {
+  padding: 20px;
+}
+
+.live_btn {
+  padding: 10px;
+}
+
+.eye_btn {
+  background: url(../images/eye_btn.png)no-repeat 43% 50%;
+  padding: 20px;
+}
+
+/*insta*/
+#raon_sns {
+  width: 1320px;
+  margin: 0 auto;
+  padding-bottom: 200px;
+}
+
+#raon_sns .title {
+  font-size: 40px;
+  line-height: 150%;
+  text-align: center;
+  font-family: 'MaruBuriSemiBold';
+  padding-bottom: 20px;
+}
+
+#raon_sns .mid_title {
+  font-size: 20px;
+  font-family: 'Pretendard';
+  text-align: center;
+}
+
+#raon_sns ol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+#raon_sns ol li {
+  overflow: hidden;
+  width: 315px;
+  margin-bottom: 20px;
+}
+
+#raon_sns ol li img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+#raon_sns ol li:hover img {
+  transform: scale(1.1, 1.1);
+}
+
+/*footer*/
+#footer {
+  background: url(../images/f_bg.png)no-repeat center top;
+  font-size: 18px;
+  line-height: 28px;
+  width: 100%;
+  padding: 24px 0;
+}
+
+.footer_inner {
+  width: 1320px;
+  margin: 0 auto;
+  align-items: center;
+  position: relative;
+}
+
+.f_logo {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.gnb {
+  display: flex;
+  padding-top: 60px;
+}
+
+.gnb li {
+  padding-right: 70px;
+  font-family: 'MaruBuriSemiBold';
+  font-size: 20px;
+}
+
+.sns {
+  display: flex;
+  color: #383330;
+  position: absolute;
+  top: 52%;
+  right: 22%;
+  z-index: 10;
+}
+
+.sns li {
+  padding-right: 20px;
+}
+
+.f_txt {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.address {
+  padding: 8px 0;
+}
+
+.copyright {
+  padding: 5px 0;
+}
+
+/*top_btn*/
+.top_btn {
+  background-color: #f7941d;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 99;
+}
+
+.top_btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
