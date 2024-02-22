@@ -168,7 +168,7 @@ body {
 
 .round_tool {
   position: absolute;
-  bottom: -27px;
+  bottom: 0;
   left: 0;
   width: 100%;
 }
