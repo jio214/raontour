@@ -1,0 +1,1029 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Argue DEMO';
+  src: url('ArgueDEMO.woff2') format('woff2'),
+    url('ArgueDEMO.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*
+프리텐다드
+font-family: 'Pretendard';*
+마루부리
+font-family: 'MaruBuriExtraLight';
+font-family: 'MaruBuriLight';
+font-family: 'MaruBuri';
+font-family: 'MaruBuriBold';
+font-family: 'MaruBuriSemiBold';*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #383330;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+video,
+iframe {
+  vertical-align: middle;
+}
+
+body {
+  min-width: 1450px;
+  width: 100%;
+  font-family: 'Pretendard';
+  font-size: 16px;
+  line-height: 26px;
+  color: #383330;
+  background-color: #f9f7f2;
+}
+
+/*header*/
+#header {
+  padding: 20px 0;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header_inner {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+.logo {
+  text-align: center;
+  position: relative;
+}
+
+#gnb {
+  display: flex;
+  justify-content: space-around;
+}
+
+#gnb li {
+  font-size: 18px;
+  padding: 15px 0;
+  width: 280px;
+  text-align: center;
+
+}
+
+#gnb li a {
+  color: #d26628;
+}
+
+.login_box {
+  position: absolute;
+  justify-content: flex-end;
+  top: 15px;
+  right: 86px;
+}
+
+.login {
+  padding-bottom: 15px;
+}
+
+.login ul {
+  display: flex;
+}
+
+.login ul li {
+  padding-left: 38px;
+  font-size: 16px;
+}
+
+.login ul li a {
+  color: #d26628;
+}
+
+.search {
+  background: #c4df9b url(../images/search.png) no-repeat 166px center;
+  color: #295728;
+  font-family: 'Pretendard';
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+  padding: 5px 20px;
+  width: 196px;
+  box-sizing: border-box;
+}
+
+.search::placeholder {
+  color: #295728;
+  font-family: 'Pretendard';
+}
+
+.search ul li {
+  font-size: 18px;
+  padding: 3px 0;
+}
+
+.search ul li a {
+  font-size: 18px;
+  color: #295728;
+}
+
+.search_icn {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.search_icn a img {
+  padding-left: 30px;
+}
+
+/*main_banner*/
+#main_banner {
+  width: 1320px;
+  margin: 0 auto;
+  padding: 200px 0;
+}
+
+.banner .swiper-slide {
+  background-color: #f9f7f2;
+}
+
+.bg {
+  background: url(../images/bg_logo.png) no-repeat right 18%;
+}
+
+#video {
+  position: relative;
+}
+
+.round_tool {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.mb_rotate {
+  position: absolute;
+  top: 62%;
+  right: 9%;
+}
+
+#main_banner .flex_box {
+  display: flex;
+  justify-content: space-around;
+}
+
+#main_banner .left_box,
+.right_box {
+  width: 421px;
+}
+
+#main_banner .left_box>p {
+  font-family: 'MaruBuriSemiBold';
+  font-size: 17px;
+  line-height: 190%;
+  color: #383330;
+  padding-top: 30px;
+}
+
+#main_banner .right_box>h1 {
+  font-family: 'MaruBuriSemiBold';
+  font-size: 46px;
+  padding-bottom: 40px;
+  color: #383330;
+}
+
+#main_banner .right_box>p {
+  font-family: 'MaruBuriSemiBold';
+  font-size: 22px;
+  text-align: end;
+  color: #383330;
+  padding-bottom: 100px;
+}
+
+.right_box .img_box:hover .blur_box {
+  opacity: 1;
+}
+
+.img_box {
+  position: relative;
+}
+
+.img_box .blur_box {
+  transform: all 0.5s;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(29, 67, 35, 0.5);
+}
+
+/*soul*/
+#soul {
+  background: url(../images/bridal.png) no-repeat center center;
+  overflow: hidden;
+}
+
+#soul .soul_inner {
+  width: 1320px;
+  height: 700px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#soul .soul_text {
+  white-space: nowrap;
+  position: absolute;
+  top: 308px;
+  left: -10px;
+}
+
+#soul .btn1 {
+  text-align: center;
+  padding: 43px 133px;
+}
+
+#soul .btn1 a {
+  background: url(../images/orange_box.png) no-repeat;
+  display: inline-block;
+  width: 146px;
+  height: 53px;
+  color: #fff;
+  padding: 14px 0;
+}
+
+#soul .btn1 a:hover {
+  color: #f7941d;
+  background: url(../images/whitebox.png) no-repeat;
+  transition: all 0.5s;
+}
+
+#soul .soul_text h1 {
+  font-family: 'Argue DEMO';
+  font-size: 60px;
+  font-weight: normal;
+  color: #fff;
+  padding-right: 30px;
+}
+
+#soul .soul_text2 {
+  font-family: 'Argue DEMO';
+  font-size: 18px;
+  line-height: 170%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -100px;
+}
+
+#soul .btn1 {
+  font-family: 'Pretendard';
+  font-size: 24px;
+  width: 146px;
+  height: 53px;
+  border-radius: 26.5px;
+}
+
+#text_box {
+  white-space: nowrap;
+  overflow: hidden;
+  transition: 0.5s;
+  background-color: #fff;
+}
+
+.text_wrapper {
+  animation: text_ani 30s linear infinite;
+  display: flex;
+  width: 8000px;
+}
+
+@keyframes text_ani {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+#text_box p {
+  font-family: 'Argue DEMO';
+  font-size: 36px;
+  padding-top: 22px;
+  padding-bottom: 17px;
+}
+
+.text_slide {
+  width: 4500px;
+}
+
+#text_box .og {
+  color: #f7941d;
+  padding-left: 50px;
+}
+
+#text_box .bw {
+  color: #d26628;
+  padding-left: 50px;
+}
+
+/*raon*/
+#raon {
+  width: 1320px;
+  margin: 0 auto;
+  padding: 200px 0;
+}
+
+#raon h1 {
+  font-family: 'MaruBuriSemiBold';
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 95px;
+}
+
+#raon .btn2 span {
+  background-color: #ef997e;
+  display: inline-block;
+  border-radius: 14px;
+  padding: 1px 28px;
+  color: #fff;
+}
+
+#raon ol {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+#raon ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+#raon ol li:hover a img {
+  transform: scale(1.1, 1.1);
+}
+
+#raon ol li a img {
+  transition: all 0.5s;
+}
+
+#raon li p {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+#raon ol li {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 75px;
+}
+
+#raon ul li:nth-child(3),
+#raon ol li:nth-child(3) {
+  width: 240px;
+}
+
+#raon ul li,
+#raon ol li {
+  width: 174px;
+}
+
+#raon ul li a {
+  display: block;
+  width: 175px;
+  margin: 0 auto;
+}
+
+/*best*/
+#best {
+  background: url(../images/best_bg.png) no-repeat center center;
+}
+
+.best_inner {
+  width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 125px 0;
+}
+
+.best_left {
+  width: 260px;
+}
+
+.best_left h1 {
+  font-family: 'MaruBuriSemiBold';
+  font-size: 40px;
+  line-height: 120%;
+  padding-top: 60px;
+}
+
+.best_left ol {
+  align-content: space-between;
+  padding: 36px 0;
+  box-sizing: border-box;
+}
+
+.best_left ol li {
+  margin-top: 15px;
+}
+
+.best_left ol li a {
+  font-size: 19px;
+}
+
+.best_right ul {
+  width: 980px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.best_right ul li {
+  position: relative;
+}
+
+.m_btn {
+  position: absolute;
+  top: 145px;
+  left: 188px;
+}
+
+.best_right ul li {
+  border-radius: 30px 30px 0 0;
+}
+
+.best_right ul li:hover {
+  transform: translateY(-20px);
+  transition: all 0.5s;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.best_right ul li:nth-child(1) {
+  border: none;
+}
+
+.best_text1 {
+  width: 282px;
+  height: 232px;
+  border: none;
+  background-color: #fff;
+  color: #383330;
+  padding: 27px 19px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 17px;
+  line-height: 170%;
+  position: relative;
+}
+
+.best_text {
+  width: 282px;
+  height: 232px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #383330;
+  padding: 27px 19px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 17px;
+  line-height: 170%;
+}
+
+.best_text1 .sub_title {
+  font-family: 'MaruBuriSemiBold';
+  font-size: 21px;
+  text-align: left;
+  padding-bottom: 28px;
+}
+
+.best_text .sub_title {
+  font-family: 'MaruBuriSemiBold';
+  font-size: 21px;
+  text-align: left;
+  padding-bottom: 28px;
+}
+
+#best .price {
+  font-family: 'MaruBuriSemiBold';
+  font-size: 24px;
+  text-align: right;
+  padding-top: 20px;
+}
+
+.best_left .active a {
+  background-color: #f7941d;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.best_left ol {
+  align-content: space-between;
+}
+
+.tabs li a {
+  background-color: #fff;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 30px;
+  color: #383330;
+}
+
+#best .btn3 li:hover a {
+  color: #f7941d;
+  background: url(../images/btn3_whitebox.png) no-repeat;
+}
+
+
+/*sub_banner*/
+#sub_banner {
+  justify-content: center;
+  align-items: center;
+  width: 1320px;
+  margin: 0 auto;
+  padding: 250px 0;
+}
+
+#sub_banner .sub_inner {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url(../images/bg01.png);
+  background-size: auto;
+  background-attachment: fixed;
+  background-position: 0%;
+  width: 100%;
+  height: auto;
+}
+
+.sub_inner h1 {
+  font-family: 'Argue DEMO';
+  font-size: 150px;
+  line-height: 120%;
+  text-align: left;
+}
+
+.sub_inner h2 {
+  font-family: 'Argue DEMO';
+  font-size: 60px;
+  line-height: 120%;
+  text-align: left;
+}
+
+/*snap*/
+#snap {
+  width: 1320px;
+  margin: 0 auto;
+  padding-bottom: 200px;
+}
+
+#snap .left_box {
+  width: 444px;
+}
+
+#snap .right_box {
+  width: 580px;
+}
+
+.snap_flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+#snap ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#snap .right_box>p {
+  font-family: 'MaruBuriSemiBold';
+  font-size: 22px;
+  line-height: 44px;
+  color: #383330;
+  padding-bottom: 20px;
+}
+
+#snap .right_box>h1 {
+  font-family: 'MaruBuriSemiBold';
+  font-size: 50px;
+  line-height: 100%;
+  color: #383330;
+  padding-bottom: 110px;
+}
+
+#snap ul li {
+  position: relative;
+}
+
+.right_box>ul>li:nth-child(2) {
+  padding-top: 103px;
+}
+
+#snap .g_btn1 {
+  background-color: #295728;
+  display: inline-block;
+  border-radius: 15px;
+  padding: 1px 30px;
+  color: #fff;
+  position: absolute;
+  top: 29%;
+  right: 6%;
+}
+
+#snap .g_text1 {
+  position: absolute;
+  top: 36%;
+  left: 7%;
+}
+
+#snap .g_btn2 {
+  background-color: #295728;
+  display: inline-block;
+  border-radius: 15px;
+  padding: 1px 30px;
+  color: #fff;
+  position: absolute;
+  top: 47%;
+  right: 6%;
+}
+
+#snap .g_text2 {
+  position: absolute;
+  top: 53%;
+  left: 10%;
+}
+
+.snap_title {
+  font-size: 18px;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+
+.snap_text {
+  padding: 0 15px;
+}
+
+.star,
+.hour {
+  font-size: 18px;
+  color: #f7941d;
+}
+
+.hour {
+  padding-left: 10px;
+}
+
+.clock_box {
+  display: flex;
+  align-items: center;
+}
+
+.snap_rivew {
+  font-size: 18px;
+  color: #383330;
+  padding-left: 48px;
+}
+
+.number {
+  font-size: 18px;
+  font-family: 'MaruBuriSemiBold';
+  color: #383330;
+  padding-left: 5px;
+}
+
+.snap_text h2 {
+  font-size: 24px;
+  font-family: 'MaruBuriSemiBold';
+  color: #383330;
+  text-align: end;
+}
+
+.snap_text ol {
+  padding-top: 37px;
+  display: flex;
+  align-content: center;
+}
+
+.snap_text ol {
+  justify-content: center;
+}
+
+.snap_new {
+  background-color: #ef997e;
+  display: inline-block;
+  padding: 1px 20px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.snap_best {
+  background-color: #a1a743;
+  display: inline-block;
+  padding: 1px 20px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.snap_text ol li {
+  padding-right: 5px;
+}
+
+#snap {
+  position: relative;
+}
+
+#snap .rotate_box {
+  position: absolute;
+  bottom: 580px;
+  right: -25px;
+}
+
+.rotate_text {
+  animation: rotation 5s linear infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*goods*/
+#goods {
+  width: 1320px;
+  margin: 0 auto;
+  padding-bottom: 200px;
+}
+
+#goods h1,
+#goods h3,
+#goods p {
+  text-align: center;
+}
+
+#goods h1 {
+  font-size: 50px;
+  font-family: 'MaruBuriSemiBold';
+  line-height: 100%;
+  padding-bottom: 50px;
+}
+
+#goods h3 {
+  font-size: 22px;
+  font-family: 'MaruBuriSemiBold';
+  line-height: 100%;
+  padding-bottom: 30px;
+}
+
+#goods p {
+  font-size: 18px;
+  font-family: 'MaruBuriSemiBold';
+  line-height: 150%;
+  padding-bottom: 70px;
+}
+
+/*화살표 밖으로 + 이미지로 화살표 변환*/
+#arrow_image {
+  width: 1320px;
+  margin: 0 auto;
+  position: relative;
+  /*화살표 포지션의 기준을 swiper밖에다가 다시 잡아 줍니다.*/
+}
+
+.card5_img {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+.card5_img .swiper-slide {
+  text-align: center;
+}
+
+/*마진오토 기준등은 원하는 크기에 따라 달라집니다!*/
+.arrow_next {
+  right: -40px;
+}
+
+.arrow_prev {
+  left: -40px;
+}
+
+/*화살표를 이미지로 변경*/
+.arrow_next:after {
+  content: url(../images/arrow_next.png);
+}
+
+.arrow_prev:after {
+  content: url(../images/arrow_prev.png);
+}
+
+.arrow_next,
+.arrow_prev {
+  width: 40px;
+  height: 40px;
+  /*이미지크기와 동일하게 설정*/
+}
+
+/*review*/
+#review {
+  background: url(../images/review_bg.png) no-repeat center center;
+  padding-bottom: 120px;
+}
+
+#review img {
+  width: 100%;
+}
+
+.review_inner {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+.review_box {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.review_inner h1 {
+  font-size: 40px;
+  font-family: 'MaruBuriSemiBold';
+  text-align: center;
+  padding: 125px 0;
+}
+
+.review_box li:nth-child(2) {
+  align-self: center;
+}
+
+.review_box h2 {
+  font-size: 28px;
+  font-family: 'MaruBuriSemiBold';
+  padding-bottom: 30px;
+}
+
+.review_box .package {
+  background-color: #ef997e;
+  display: inline-block;
+  padding: 1px 30px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-family: 'Pretendard';
+  font-weight: normal;
+  color: #fff;
+  position: absolute;
+  top: 47px;
+  left: 125px;
+}
+
+.see {
+  font-size: 18px;
+  position: absolute;
+  top: 300px;
+  left: 305px;
+}
+
+.review_txt {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 45px;
+}
+
+/*insta*/
+#insta {
+  background: url(../images/bg02.png)no-repeat center center;
+  width: 100%;
+  height: 833px;
+  text-align: center;
+}
+
+#insta p {
+  font-size: 22px;
+  font-family: 'MaruBuriSemiBold';
+  color: #fff;
+  padding-top: 280px;
+}
+
+#insta h1 {
+  font-size: 50px;
+  font-family: 'MaruBuriSemiBold';
+  color: #fff;
+  padding-top: 50px;
+}
+
+/*footer*/
+#footer {
+  background: url(../images/f_bg.png)no-repeat center top;
+  font-size: 18px;
+  line-height: 28px;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 24px 0;
+}
+
+#footer_position {
+  position: relative;
+  height: 1229px;
+}
+
+.footer_inner {
+  width: 1320px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.f_logo {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.gnb {
+  display: flex;
+  padding-top: 60px;
+}
+
+.gnb li {
+  padding-right: 70px;
+  font-family: 'MaruBuriSemiBold';
+  font-size: 20px;
+}
+
+.sns {
+  display: flex;
+  color: #383330;
+  position: absolute;
+  top: 54%;
+  right: 30.5%;
+}
+
+.sns li {
+  padding-right: 20px;
+}
+
+.f_txt {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.address {
+  padding: 8px 0;
+}
+
+.copyright {
+  padding: 5px 0;
+}
+
+/*top_btn*/
+.top_btn {
+  background-color: #f7941d;
+  color: #fff;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  display: flex;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 99;
+}
+
+.top_btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
